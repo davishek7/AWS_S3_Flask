@@ -4,7 +4,7 @@
   <div class="container">
   	<div class="row">
   		<div class="col-12-xs">
-  			<h1>Bucket Info</h1>
+  			<h1>Bucket Info {{ my_bucket.name }}</h1>
   			<p>Created {{my_bucket.creation_date | datetimeformat}}</p>
 
         {% with messages=get_flashed_messages() %}
